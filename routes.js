@@ -4,8 +4,8 @@ const reqHandler = (req,res)=>{
   if (reqUrl === '/') {
     res.setHeader('Content-Type', 'text/html');
     res.write('<html lang="zh-cn">')
-    res.write('<head><title>node test</title></head>')
-    res.write('<body><form method="POST" action="/create-user"><input type="text" name="name"/><button type="submit">Send</button></form></body>')
+    res.write('<head><meta charset="UTF-8"><title>node test</title></head>')
+    res.write('<body><form method="POST" action="/create-user"><input type="text" name="name"/><button type="submit">送出</button></form></body>')
     res.write('</html>')
     res.end()
   }
